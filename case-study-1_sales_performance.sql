@@ -21,7 +21,7 @@ FROM order_items oi
 JOIN products p 
     ON oi.product_id = p.product_id
 GROUP BY p.product_name
-ORDER BY product_revenue DESC
+ORDER BY product_revenue DESC 
 LIMIT 5;
 
 -- Business Insight
